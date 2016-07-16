@@ -1,0 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Viga';
+.logo {
+  font-family: 'Viga', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  padding-left: 8px;
+  color: #333;
+  -webkit-box-reflect: below -24px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.4, transparent), to(rgba(0,0,0,0.8)));
+}
