@@ -52,6 +52,10 @@
   float: left;
   box-sizing: border-box; }
 
+.inline {
+  display: inline;
+}
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
@@ -751,7 +755,7 @@ div.spacer-xs {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
   margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
@@ -898,16 +902,26 @@ there.
 }
 .pmenu a {
   display: block;
-  color: #b3b3b1;
+  color: #FFF;
   padding: 15px 30px;
   text-decoration: none;
   outline: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all  0.2s ease;
 }
 .pmenu a:hover {
-  color: #FFF;
+  color: #e3e3e3;
+  background-color: #333;
 }
 .pmenu ul:first-child {
   margin-top: 10px;
+  list-style: none;
+}
+
+.pmenu ul {
+  list-style: none;
 }
 .pmenu.pmenu-left {
   left: 0;
@@ -992,6 +1006,12 @@ there.
     opacity: 1;
   }
 }
+.pmenu hr {
+  width: 100%;
+  border-top: 4px solid #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 /* Submenu Appearance */
 .pmenu-submenu {
   /* Submenu Icon */
@@ -1019,6 +1039,10 @@ there.
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   transition: transform 0.2s;
+}
+
+.pmenu-submenu .pmenu-icon {
+padding: 4px;
 }
 
 /* Submenu Movement */
@@ -1124,6 +1148,7 @@ nav ul{
   width : 95% ; /* IE8以下とAndroid4.3以下用フォールバック */
   width : -webkit-calc(100% - 60px) ;
   width : calc(100% - 60px) ;
+  text-align: center;
 }
 
 .clean-search .clean-search-btn {
@@ -1149,6 +1174,21 @@ nav ul{
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
 }
 
+input.clean-search-input::-webkit-input-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+input.clean-search-input:-ms-input-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+input.clean-search-input::-moz-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
 .checkbox_1 {
   color: red;
 }

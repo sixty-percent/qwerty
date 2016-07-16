@@ -5,5 +5,21 @@
   letter-spacing: 1rem;
   padding-left: 8px;
   color: #333;
-  -webkit-box-reflect: below -24px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.4, transparent), to(rgba(0,0,0,0.8)));
+  -webkit-box-reflect: below -26px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.4, transparent), to(rgba(0,0,0,0.8)));
+}
+
+.pmenu .brand-box {
+  box-shadow: 0px 5px 15px -5px rgba(255,255,255,0.5);
+  -webkit-box-shadow: 0px 5px 15px -5px rgba(255,255,255,0.5);
+  -moz-box-shadow: 0px 5px 15px -5px rgba(255,255,255,0.5);
+  margin-bottom: 24px;
+}
+
+.pmenu .brand-box p {
+  font-family: 'Viga', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.75rem;
+  padding-left: 1.2px;
+  color: #e1e1e1;
+  margin: 0;
 }
