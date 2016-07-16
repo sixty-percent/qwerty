@@ -38,10 +38,25 @@
     <a class="menu-btn"><i class="icon ion-navicon"></i></a>
   </div>
   <nav class="pmenu pmenu-left">
+    <div class="brand-box">
+      <div class="spacer-sm"></div>
+      <div class="tx-center menu-brand">
+        <img class="" src="images/logo.png" width="100px" />
+        <p>QWERTY</p>
+      </div>
+      <div class="spacer-sm"></div>
+    </div>
     <ul>
-      <li class="pmenu-submenu"><a href="#">Introduction</a></li>
-      <li class="pmenu-submenu"><a href="#">Conception</a></li>
-      <li class="pmenu-link"><a href="#">Example</a></li>
+      <li class="pmenu-link"><a href="#">Introduction</a></li>
+      <li class="pmenu-link"><a href="#">Conception</a></li>
+      <li class="pmenu-submenu">
+          <a href="#">Examples  <i class="pmenu-icon icon ion-ios-arrow-right"></i></a>
+          <ul>
+              <li class="pmenu-link"><a href="#">Item 1</a></li>
+              <li class="pmenu-link"><a href="#">Item 2</a></li>
+              <li class="pmenu-link"><a href="#">Item 3</a></li>
+          </ul>
+      </li>
       <li class="pmenu-link"><a href="#">Themes</a></li>
       <li class="pmenu-link"><a href="https://github.com/thousandjapan/qwerty" target="_blank"><i class="icon ion-social-github"></i> Guthub <i class="icon ion-android-open"></i></a></li>
     </ul>
@@ -66,7 +81,8 @@
     <div class="row">
       <div class="tx-center">
         <img src="images/logo.png" width="180px" />
-          <h4 class="fw-100"><span class="fw-600">Customizing</span> is<br class="show-xs"> as</span><span class="fw-600"> easy</span> as pie.</h4>
+        <h4 class="fw-100"><span class="fw-500">Customizing</span><br class="show-xs"> is as</span><span class="fw-500"> easy</span> as pie.</h4>
+        <button class="btn btn-dark menu-btn"><i class="icon ion-navicon"></i> Menu</button>
       </div>
     </div>
   </div>
@@ -248,6 +264,15 @@ $(function() {
   });
   $('.wrapper').click(function(e) {
     $('.clean-search').removeClass('clean-search-active');
+  });
+  $('.pmenu-submenu').click(function(e) {
+    if(jQuery(this).hasClass('pmenu-submenu-closed')){
+      $('.pmenu-icon',this).removeClass('ion-ios-arrow-down');
+      $('.pmenu-icon',this).addClass('ion-ios-arrow-right');
+    } else if (jQuery(this).hasClass('pmenu-submenu-open') ) {
+      $('.pmenu-icon',this).addClass('ion-ios-arrow-down');
+      $('.pmenu-icon',this).removeClass('ion-ios-arrow-right');
+    }
   });
 });
 </script>
