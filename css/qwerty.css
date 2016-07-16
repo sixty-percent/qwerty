@@ -898,16 +898,22 @@ there.
 }
 .pmenu a {
   display: block;
-  color: #b3b3b1;
+  color: #FFF;
   padding: 15px 30px;
   text-decoration: none;
   outline: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all  0.2s ease;
 }
 .pmenu a:hover {
-  color: #FFF;
+  color: #e3e3e3;
+  background-color: #333;
 }
 .pmenu ul:first-child {
   margin-top: 10px;
+  list-style: none;
 }
 .pmenu.pmenu-left {
   left: 0;
@@ -1124,6 +1130,7 @@ nav ul{
   width : 95% ; /* IE8以下とAndroid4.3以下用フォールバック */
   width : -webkit-calc(100% - 60px) ;
   width : calc(100% - 60px) ;
+  text-align: center;
 }
 
 .clean-search .clean-search-btn {
@@ -1149,6 +1156,21 @@ nav ul{
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
 }
 
+input.clean-search-input::-webkit-input-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+input.clean-search-input:-ms-input-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+input.clean-search-input::-moz-placeholder {
+    color: #999;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
 .checkbox_1 {
   color: red;
 }
