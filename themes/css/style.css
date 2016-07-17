@@ -58,3 +58,11 @@
   position: absolute;
   line-height: 1.6em;
 }
+
+.default-nav ul li {
+  padding: 12px;
+}
+
+.default-nav ul li i {
+  margin: 0 10%; 
+}
