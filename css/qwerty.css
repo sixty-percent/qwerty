@@ -1267,31 +1267,44 @@ input.clean-search-input::-moz-placeholder {
   text-decoration: none;
   -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
-  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 6px 0;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .card {
     width: 100%;
+    margin-right: 0px;
   }
 }
-@media (min-width: 700px) {
-  .card {
-    max-width: 320px;
+@media (min-width: 1024px) {
+   .card-1 {
+     width: 100%;
+  }
+   .card-2 {
+    max-width: 482px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  .card:nth-child(even) {
+  .card-3 {
+    max-width: 314px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card-2:nth-child(2n) {
     margin-right: 0;
   }
 }
-@media (min-width: 980px) {
-  .card:nth-child(even) {
+
+@media (min-width: 1024px) {
+  .card-2:nth-child(even) {
+    margin-right: 0px;
+  }
+  .card-3:nth-child(even) {
     margin-right: 20px;
   }
-  .card:nth-child(3n) {
+  .card-3:nth-child(3n) {
     margin-right: 0;
   }
 }
@@ -1299,7 +1312,7 @@ input.clean-search-input::-moz-placeholder {
   display: block;
 }
 .card .card-summary {
-  padding: 3% 5% 3% 5%;
+  padding: 12px;
 }
 .card .card-header {
   overflow: hidden;
@@ -1330,7 +1343,7 @@ input.clean-search-input::-moz-placeholder {
 }
 .card .card-header .card-title {
   background: #fff;
-  padding: 3.5% 0 2.5% 0;
+  padding: 12px;
   color: #333;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -1341,7 +1354,7 @@ input.clean-search-input::-moz-placeholder {
 }
 .card .card-header-img .card-title {
   background: rgba(0, 0, 0, 0.55);
-  padding: 3.5% 0 2.5% 0;
+  padding: 12px 0px;
   color: white;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
@@ -1352,21 +1365,33 @@ input.clean-search-input::-moz-placeholder {
 .card > .card-title h3 {
   font-size: 1.2em;
   line-height: 1.2;
-  padding: 12px 3.5% 12px 3.5%;
+  padding: 12px;
   border-bottom: solid #f1f1f1 1px;
   margin: 0;
 }
 .card .card-header-img .card-title h3 {
   font-size: 1.2em;
   line-height: 1.2;
-  padding: 0 3.5%;
+  padding: 12px;
+  margin: 0;
 }
 .card .card-meta {
   max-height: 1em;
-  color: #666;
-  font-size: .78em;
+  color: #888;
+  font-size: .7em;
   text-transform: uppercase;
   position: absolute;
-  bottom: 12px;
-  padding: 0 5%;
+  bottom: 0px;
+  padding: 12px;
+}
+
+.card .card-meta-right {
+  max-height: 1em;
+  color: #888;
+  font-size: .7em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 12px;
 }
