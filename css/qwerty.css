@@ -799,7 +799,7 @@ there.
 @media (min-width: 750px) {}
 
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1024px) {}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
@@ -860,7 +860,7 @@ there.
 }
 
 /* Larger than tablet */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .show-xs {display: none}
   .show-sm {display: none}
   .show-md {display: block}
@@ -1102,7 +1102,7 @@ padding: 4px;
   /* Submenu Icon */
 }
 .pmenu-submenu-open ul {
-  max-height: 1000px;
+  max-height: 1024px;
 }
 .pmenu-submenu-open .pmenu-link {
   opacity: 1;
