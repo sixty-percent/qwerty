@@ -25,9 +25,13 @@
 + Text Align
 + Fill
 + Visiblity
++ Aligner
+
+**Components**
+
 + Push Menu
 + Clean Search
-+ Aligner
++ Flex Card
 */
 
 
@@ -882,6 +886,42 @@ there.
   .hide-xs {display: none}
 }
 
+/* Aligner
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.aligner {
+  width: 100%;
+  position: relative;
+}
+
+.aligner .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.aligner .right {
+  position: absolute;
+  right: 0;
+}
+.aligner .left {
+  position: absolute;
+  left: 0;
+}
+.aligner .top {
+  position: absolute;
+  top: 0;
+}
+.aligner .bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 /* Push Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*! pmenu - v1.0.0 - 2016-3-1
@@ -1128,6 +1168,9 @@ nav ul{
   line-height: 40px;
 }
 
+/* Cleab Search
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .clean-search {
   opacity: 0;
   display: none;
@@ -1194,38 +1237,6 @@ input.clean-search-input::-moz-placeholder {
   color: red;
 }
 
-/* Aligner
+
+/* Flex Card
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.aligner {
-  width: 100%;
-  position: relative;
-}
-
-.aligner .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.aligner .right {
-  position: absolute;
-  right: 0;
-}
-.aligner .left {
-  position: absolute;
-  left: 0;
-}
-.aligner .top {
-  position: absolute;
-  top: 0;
-}
-.aligner .bottom {
-  position: absolute;
-  bottom: 0;
-}
