@@ -1,9 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Viga';
 .logo {
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  padding-left: 8px;
-  color: #333;
+  font-size: 18px;
+  color: #fff;
   letter-spacing: 2px;
 }
 
@@ -17,7 +16,6 @@
 .pmenu .brand-box p {
   font-family: 'Viga', sans-serif;
   font-size: 1.5rem;
-  padding-left: 1.2px;
   color: #e1e1e1;
   margin: 0;
 }
@@ -59,6 +57,10 @@
   line-height: 1.6em;
 }
 
+.default-nav ul {
+  margin-top: 0px;
+}
+
 .default-nav ul li {
   padding: 12px;
 }
@@ -68,5 +70,12 @@
 }
 
 .text-logo .logo {
-  margin-top: 10px;
+  background-color: #222;
+  margin: 0px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+}
+.text-logo .logo:hover {
+  background-color: #292929;
 }
