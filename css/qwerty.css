@@ -1144,7 +1144,7 @@ nav ul{
 }
 
 .pmenu-header .header-left a {
-	font-size: 24px;
+	font-size: 26px;
 	color: #333;
 	text-align: center;
 	cursor: pointer;
@@ -1156,7 +1156,7 @@ nav ul{
 }
 
 .pmenu-header .header-right a {
-	font-size: 24px;
+	font-size: 26px;
 	color: #333;
 	text-align: center;
 	cursor: pointer;
@@ -1200,7 +1200,7 @@ nav ul{
 }
 
 .clean-search .clean-search-btn {
-  font-size: 24px;
+  font-size: 26px;
   height: 60px;
   width: 60px;
   float: right;
@@ -1209,7 +1209,7 @@ nav ul{
 
 .clean-search .clean-search-btn i {
   color: #222;
-  margin-left: 22px;
+  margin-left: 20px;
 }
 
 .clean-search-active {
@@ -1224,17 +1224,17 @@ nav ul{
 
 input.clean-search-input::-webkit-input-placeholder {
     color: #999;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 input.clean-search-input:-ms-input-placeholder {
     color: #999;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 input.clean-search-input::-moz-placeholder {
     color: #999;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 .checkbox_1 {
