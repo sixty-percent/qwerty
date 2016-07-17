@@ -1219,6 +1219,44 @@ nav ul{
   }
 }
 
+@media (max-width: 1200px) {
+  .default-nav {
+    position: relative;
+    background-color: #333;
+    z-index: 1000;
+    width:  100% !important;
+    margin-left: 0;
+  }
+
+  .default-nav ul {
+    list-style: none;
+    margin-top: 60px;
+  }
+
+  .default-nav ul li {
+    text-align: center;
+    line-height: 26px;
+    margin: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+
+  .default-nav ul li i{
+    display: none;
+  }
+  .default-nav ul li:hover {
+    line-height: 26px;
+    margin: 0;
+    background-color: #555;
+  }
+
+  .default-nav ul a {
+    color: #fff
+  }
+}
+
 /* Cards
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
