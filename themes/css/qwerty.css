@@ -1356,12 +1356,17 @@ nav ul{
   padding: 12px;
   margin: 0;
 }
+
 .card .card-close {
   position: absolute;
   top: 12px;
   right: 12px;
+  cursor: pointer;
 }
 
+.card .card-close:hover {
+  color: #eee;
+}
 /* COLOR */
 .cards .filled .card-meta span {
   color: rgba(255, 255, 255, 0.92) !important;
