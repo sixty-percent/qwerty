@@ -1356,6 +1356,11 @@ nav ul{
   padding: 12px;
   margin: 0;
 }
+.card .card-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
 
 /* COLOR */
 .cards .filled .card-meta span {

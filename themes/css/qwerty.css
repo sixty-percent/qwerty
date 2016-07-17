@@ -239,6 +239,7 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
+  top: 3px;
   background-color: #e5e5e5;
 }
 
@@ -1139,7 +1140,7 @@ nav ul{
 
 .menu-header .header-left {
   text-align: left;
-  padding: 16px 20px;
+  padding: 10px 20px;
 }
 
 .menu-header .header-left i {
@@ -1198,7 +1199,7 @@ nav ul{
   }
 
   .default-nav ul li {
-    line-height: 54px;
+    line-height: 70px;
     margin: 0;
     padding-left: 24px;
     -webkit-transition: all 0.3s ease;
@@ -1208,7 +1209,45 @@ nav ul{
   }
 
   .default-nav ul li:hover {
-    line-height: 54px;
+    line-height: 70px;
+    margin: 0;
+    background-color: #555;
+  }
+
+  .default-nav ul a {
+    color: #fff
+  }
+}
+
+@media (max-width: 1200px) {
+  .default-nav {
+    position: relative;
+    background-color: #333;
+    z-index: 1000;
+    width:  100% !important;
+    margin-left: 0;
+  }
+
+  .default-nav ul {
+    list-style: none;
+    margin-top: 60px;
+  }
+
+  .default-nav ul li {
+    text-align: center;
+    line-height: 26px;
+    margin: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+
+  .default-nav ul li i{
+    display: none;
+  }
+  .default-nav ul li:hover {
+    line-height: 26px;
     margin: 0;
     background-color: #555;
   }
@@ -1317,17 +1356,12 @@ nav ul{
   padding: 12px;
   margin: 0;
 }
-
 .card .card-close {
   position: absolute;
   top: 12px;
   right: 12px;
-  cursor: pointer;
 }
 
-.card .card-close:hover {
-  color: #eee;
-}
 /* COLOR */
 .cards .filled .card-meta span {
   color: rgba(255, 255, 255, 0.92) !important;
