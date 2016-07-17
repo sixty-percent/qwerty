@@ -30,12 +30,15 @@
 <nav class="menu default-nav two columns">
   <ul>
     <a class="text-logo tx-center"><h4 class="logo">Qwerty Admin</h4></a>
-    <a href="./index.html"><li class="menu-link"><i class="icon ion-flag"></i>TOP</li></a>
-    <a href="./index.html"><li class="menu-link"><i class="icon ion-document-text"></i>Archives</li></a>
-    <a href="./index.html"><li class="menu-link"><i class="icon ion-person-stalker"></i>Users</li></a>
-    <a href="./index.html"><li class="menu-link"><i class="icon ion-paper-airplane"></i>Notification</li></a>
-    <a href="./index.html"><li class="menu-link"><i class="icon ion-arrow-graph-up-right"></i>Analytics</li></a>
-  <a href="./index.html">  <li class="menu-link"><i class="icon ion-android-apps"></i>Status</li></a>
+    <div class="drawer-items">
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-flag"></i>TOP</li></a>
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-document-text"></i>Archives</li></a>
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-person-stalker"></i>Users</li></a>
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-paper-airplane"></i>Notification</li></a>
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-arrow-graph-up-right"></i>Analytics</li></a>
+      <a href="./index.html"><li class="menu-link"><i class="icon ion-android-apps"></i>Status</li></a>
+    </div>
+    <a href="#"><li class="drawer menu-link"><span class="icon ion-chevron-down"></span></li></a>
   </ul>
 </nav>
 
@@ -239,6 +242,24 @@ $(function() {
   });
   $('.wrapper').click(function(e) {
     $('.clean-search').removeClass('clean-search-active');
+  });
+
+  var f = false;
+  $('.drawer').click(function(e) {
+    console.log(f);
+    if(f){
+    $('.drawer-items').css('display', 'none');
+    $('.drawer-items').css('margin-top', '-306px');
+    $('.ion-chevron-down').addClass('ion-chevron-down');
+    $('.ion-chevron-down').removeClass('ion-chevron-up');
+    f = false;
+    }else {
+    $('.drawer-items').css('display', 'block');
+    $('.drawer-items').css('margin-top', '0px');
+    $('.ion-chevron-down').addClass('ion-chevron-up');
+    $('.ion-chevron-down').removeClass('ion-chevron-down');
+    f = true;
+    }
   });
 });
 </script>

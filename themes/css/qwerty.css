@@ -1218,25 +1218,42 @@ nav ul{
   .default-nav ul a {
     color: #fff
   }
+
+  .default-nav .drawer {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
   .default-nav {
     position: relative;
     background-color: #333;
-    z-index: 1000;
     width:  100% !important;
     margin-left: 0;
   }
 
+  .default-nav .text-logo {
+    z-index: 100;
+  }
+
+  .default-nav .drawer-items {
+    margin-top: -306px;
+    z-index: -100;
+    display: none;
+  }
+
   .default-nav ul {
     list-style: none;
-    margin-top: 60px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
   }
 
   .default-nav ul li {
     text-align: center;
     line-height: 26px;
+    border-bottom: 1px solid #3e3e3e;
     margin: 0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -1255,6 +1272,11 @@ nav ul{
 
   .default-nav ul a {
     color: #fff
+  }
+
+  .default-nav .drawer {
+    height: 25px;
+    padding: 0;
   }
 }
 
