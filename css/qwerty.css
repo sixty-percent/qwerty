@@ -46,7 +46,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   padding: 20px 20px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -1242,3 +1242,129 @@ input.clean-search-input::-moz-placeholder {
 
 /* Cards
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background: #fefff9;
+  color: #363636;
+  text-decoration: none;
+  -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    max-width: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .card:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 980px) {
+  .card:nth-child(even) {
+    margin-right: 20px;
+  }
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+.card span {
+  display: block;
+}
+.card .card-summary {
+  padding: 3% 5% 3% 5%;
+}
+.card .card-header {
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+.card .card-header-img {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 0.15);
+  background-blend-mode: overlay;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+}
+.card .card-header-img:hover, .card .card-header-img:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+.card .card-header .card-title {
+  background: #fff;
+  padding: 3.5% 0 2.5% 0;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  border-bottom: solid #e5e5e5 1px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card .card-header-img .card-title {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 3.5% 0 2.5% 0;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.card > .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 12px 3.5% 12px 3.5%;
+  border-bottom: solid #f1f1f1 1px;
+  margin: 0;
+}
+.card .card-header-img .card-title h3 {
+  font-size: 1.2em;
+  line-height: 1.2;
+  padding: 0 3.5%;
+}
+.card .card-meta {
+  max-height: 1em;
+  color: #666;
+  font-size: .78em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 12px;
+  padding: 0 5%;
+}
