@@ -90,6 +90,30 @@
 
   <div class="container">
     <div class="row">
+      <section class="center slider">
+        <div>
+          <img src="http://placehold.it/350x300?text=1">
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=2">
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=3">
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=4">
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=5">
+        </div>
+        <div>
+          <img src="http://placehold.it/350x300?text=6">
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
     	<div class="cards">
     		<div class="card card-1" href="#">
   				<span class="card-title">
@@ -344,8 +368,10 @@
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <!-- Pushy JS -->
 <script src="js/pushy.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script>
 $(function() {
+
   $('.clean-search-show').click(function(e) {
     $('.clean-search').addClass('clean-search-active');
   });
@@ -360,6 +386,36 @@ $(function() {
       $('.pmenu-icon',this).addClass('ion-ios-arrow-down');
       $('.pmenu-icon',this).removeClass('ion-ios-arrow-right');
     }
+  });
+
+  $('.center').slick({
+    dots: true,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '20px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: true,
+          arrows: false,
+          centerMode: true,
+          centerPadding: '20px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
 </script>
