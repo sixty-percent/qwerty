@@ -1487,3 +1487,20 @@ nav ul{
   bottom: 0px;
   padding: 8px 12px 12px 12px;
 }
+
+/* Accennt */
+.accent-dark {
+  border-top: 2px #333333 solid;
+}
+.accent-red {
+  border-top: 2px #ad1e25 solid;
+}
+.accent-blue {
+  border-top: 2px #007bc3 solid;
+}
+.accent-orange {
+  border-top: 2px #eb7413 solid;
+}
+.accent-green {
+  border-top: 2px #008051 solid;
+}
