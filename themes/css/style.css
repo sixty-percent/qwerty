@@ -83,3 +83,7 @@
 .text-logo .logo:hover {
   background-color: #292929;
 }
+
+.drawer {
+  padding: 0;
+}
