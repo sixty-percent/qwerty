@@ -1187,10 +1187,10 @@ nav ul{
 
 @media (min-width: 1200px) {
   .default-nav {
-    position: relative;
+    position: absolute;
     background-color: #333;
     z-index: 1000;
-    height: 100vmax;
+    height: 100vh;
     margin-left: 0;
   }
 
