@@ -69,6 +69,10 @@
   margin: 0 10%;
 }
 
+.drawer-items {
+  display:none;
+}
+
 .text-logo .logo {
   background-color: #222;
   margin: 0px;
@@ -78,8 +82,4 @@
 }
 .text-logo .logo:hover {
   background-color: #292929;
-}
-
-.drawer {
-  padding: 0;
 }
