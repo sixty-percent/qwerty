@@ -103,4 +103,4 @@ Coming soon.
 
 ## Acknowledgement
 
-Skeleton was created by [Hiro(@hiro__dev)](https://twitter.com/hiro__dev).
+qwerty was created by [Hiro(@hiro__dev)](https://twitter.com/hiro__dev).
