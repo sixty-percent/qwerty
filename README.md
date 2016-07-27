@@ -41,12 +41,12 @@ qwerty/
 The folloing is relation of contents.
 
 ```
--.wrap
-  └ .pack
-     └ .row
-        ├ .col-1
-        ├ .push-1 (offset columns align)
-        └ .pull-1 (offset columns align)
+- .wrap
+    └ .pack
+         └ .row
+            ├ .col-1
+            ├ .push-1 (offset columns align)
+            └ .pull-1 (offset columns align)
 ```
 
 qwerty requires the element is added classname **.wrap** to wrap all site contents.
@@ -57,26 +57,26 @@ qwerty requires the element is added classname **.wrap** to wrap all site conten
 ## Text Selector
 Related to text style, use **tx-xxxx**,
 For example:
-**.tx-center**
-**.tx-right**
-**.tx-color**
+- **.tx-center**  
+- **.tx-right**  
+- **.tx-color**  
 
 ## Color List
 .xxxx-dark (#333333)
 .xxxx-smoke (#F5F5F5)
 
 ## Visiblity
-**.show-xs** Visible (max-width: 550px) Screen: Like a Mobile devices.
-**.show-sm** Visible (max-width: 750px) Screen: Like a Phablet devices.
-**.show-md** Visible (max-width: 1000px) Screen: Like a Tablet devices.
-**.show-lg** Visible (max-width: 1200px) Screen: Like a Desktop devices.
-**.show-xl** Visible (min-width: 1200px) Screen: Like a Desktop HD devices.
+- **.show-xs** Visible (max-width: 550px) Screen: Like a Mobile devices.  
+- **.show-sm** Visible (max-width: 750px) Screen: Like a Phablet devices.  
+- **.show-md** Visible (max-width: 1000px) Screen: Like a Tablet devices.  
+- **.show-lg** Visible (max-width: 1200px) Screen: Like a Desktop devices.  
+- **.show-xl** Visible (min-width: 1200px) Screen: Like a Desktop HD devices.  
 
-**.hide-xs** Unvisible (max-width: 550px) Screen: Like a Mobile devices.
-**.hide-sm** Unvisible (max-width: 750px) Screen: Like a Phablet devices.
-**.hide-md** Unvisible (max-width: 1000px) Screen: Like a Tablet devices.
-**.hide-lg** Unvisible (max-width: 1200px) Screen: Like a Desktop devices.
-**.hide-xl** Unvisible (min-width: 1200px) Screen: Like a Desktop HD devices.
+- **.hide-xs** Unvisible (max-width: 550px) Screen: Like a Mobile devices.  
+- **.hide-sm** Unvisible (max-width: 750px) Screen: Like a Phablet devices.  
+- **.hide-md** Unvisible (max-width: 1000px) Screen: Like a Tablet devices.  
+- **.hide-lg** Unvisible (max-width: 1200px) Screen: Like a Desktop devices.  
+- **.hide-xl** Unvisible (min-width: 1200px) Screen: Like a Desktop HD devices.  
 
 # Theming
 
