@@ -44,8 +44,9 @@ The folloing is relation of contents.
 <div class="wrap">
   <div class="pack">
     <div class="row">
-      <div class="col-6"><h1>First Content</h1></div>
-      <div class="col-6"><h1>Second Content</h1></div>
+      <div class="six col"><h1>First Content</h1></div>
+      <div class="four col"><h1>Second Content</h1></div>
+      <div class="two col"><h1>Second Content</h1></div>
     </div>
   </div>
 </div>
