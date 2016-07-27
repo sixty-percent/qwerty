@@ -41,12 +41,14 @@ qwerty/
 The folloing is relation of contents.
 
 ```
-- .wrap
-    └ .pack
-         └ .row
-            ├ .col-1
-            ├ .push-1 (offset columns align)
-            └ .pull-1 (offset columns align)
+<div class="wrap">
+  <div class="pack">
+    <div class="row">
+      <div class="col-6"><h1>First Content</h1></div>
+      <div class="col-6"><h1>Second Content</h1></div>
+    </div>
+  </div>
+</div>
 ```
 
 qwerty requires the element is added classname **.wrap** to wrap all site contents.
