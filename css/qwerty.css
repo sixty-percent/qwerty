@@ -1,21 +1,11 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
-
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
+- Grid System
 - Base Styles
 - Typography
 - Links
--
 - Forms
 - Lists
 - Code
@@ -23,20 +13,18 @@
 - Spacing
 - Utilities
 - Media Queries
-+ Text Align
-+ Fill
-+ Visiblity
-+ Aligner
+- Text Align
+- Fill
+- Visiblity
+- Aligner
+- Card
 
-**Components**
-
+** Componets **
 + Push Menu
-+ Clean Search
-+ Flex Card
+
 */
 
-
-/* Grid
+/* Grid System
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .wrap {
   position: relative;
@@ -81,23 +69,26 @@
     margin-left: 0; }
 
   .one.col,
-  .one.cols                    { width: 4.66666666667%; }
-  .two.cols                    { width: 13.3333333333%; }
+  .one.cols                    { width: 6.95833333333%; }
+  .two.cols                    { width: 15.41666666666667%; }
   .three.cols                  { width: 23.87%;            }
   .four.cols                   { width: 32.33%; }
-  .five.cols                   { width: 39.3333333333%; }
+  .five.cols                   { width: 40.76666666665%; }
   .six.cols                    { width: 49.25%;            }
-  .seven.cols                  { width: 56.6666666667%; }
+  .seven.cols                  { width: 57.70%; }
   .eight.cols                  { width: 65.3333333333%; }
   .nine.cols                   { width: 74.0%;          }
-  .ten.cols                    { width: 86.666667%; }
-  .eleven.cols                 { width: 91.3333333333%; }
+  .ten.cols                    { width: 83.0834%; }
+  .eleven.cols                 { width: 91.5416667%; }
   .twelve.cols                 { width: 100%; margin-left: 0; }
 
   .one-third               { width: calc(100%/3); }
   .two-thirds              { width: calc(100%/3*2); }
-
   .one-half                { width: calc(100%/2); }
+
+  .one-third.col               { width: 32.33%; }
+  .two-thirds.col              { width: 65.3333333333%; }
+  .one-half.col                { width: 49.25%; }
 
   /* Offsets */
   .push-one.col,
