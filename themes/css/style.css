@@ -56,6 +56,12 @@
   position: absolute;
   line-height: 1.6em;
 }
+body > .default-nav {
+height: auto;
+}
+.default-nav {
+  height: 100% !important;
+}
 
 .default-nav ul {
   margin-top: 0px;
@@ -76,6 +82,37 @@
   padding-bottom: 18px;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 }
+
 .text-logo .logo:hover {
   background-color: #292929;
+}
+
+.fix-menu-header {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .drawer {
+    display: none;
+  }
+  .default-nav {
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .default-nav ul li:hover {
+    line-height: 70px;
+    margin: 0;
+    background-color: #d4d4d4 !important;
+  }
+  .default-nav ul a {
+    color: #333 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .drawer {
+    padding: 0 !important;
+  }
+  .drawer-items {
+    display:none;
+  }
 }

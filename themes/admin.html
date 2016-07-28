@@ -15,11 +15,8 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/qwerty.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/pushy.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,7 +24,7 @@
 </head>
 <body>
 
-<nav class="menu default-nav two columns">
+<nav class="menu default-nav two cols">
   <ul>
     <a class="text-logo tx-center"><h4 class="logo">Qwerty Admin</h4></a>
     <div class="drawer-items">
@@ -45,9 +42,7 @@
 <div class="site-overlay"></div>
 
 <!--****** MAIN CONTENT ************** -->
-<div class="wrapper ten columns" style="margin-left: 0;">
-
-  <!--****** HEADER ************** -->
+<div class="wrap ten cols" style="margin-left: 0;">
   <header class="menu-header fix-menu-header">
     <div class="header-left">
       <button class="btn btn-dark btn-sm">Button</button>
@@ -58,14 +53,14 @@
       <button class="btn btn-blue btn-sm">Button</button>
     </div>
   </header>
-  <div class="spacer-lg"></div>
-  <div class="container">
+  <!--****** HEADER ************** -->
+  <div class="pack">
     <div class="row tx-center heading-top">
       <h5 >TOP</h5>
     </div>
     <div class="row">
       <div class="cards">
-        <div class="card twelve columns" href="#">
+        <div class="card twelve cols" href="#">
           <span class="card-title">
             <h3><i class="icon ion-edit"></i> New Post</h3>
             <a class="card-close"><i class="icon ion-close"></i></a>
@@ -77,7 +72,7 @@
         </div>
       </div>
       <div class="spacer-xs"></div>
-      <div class="cards six columns" style="margin-left: 0;">
+      <div class="cards six cols" style="margin-left: 0;">
         <div class="row tx-center heading-top">
           <h5>Views Ranking</h5>
         </div>
@@ -152,7 +147,7 @@
     			</div>
     		</div>
       </div>
-      <div class="cards six columns">
+      <div class="cards six cols">
         <div class="row tx-center heading-top">
           <h5>Hooks Ranking</h5>
         </div>
@@ -240,7 +235,7 @@ $(function() {
   $('.clean-search-show').click(function(e) {
     $('.clean-search').addClass('clean-search-active');
   });
-  $('.wrapper').click(function(e) {
+  $('.wrap').click(function(e) {
     $('.clean-search').removeClass('clean-search-active');
   });
 
