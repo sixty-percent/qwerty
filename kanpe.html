@@ -15,11 +15,8 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/qwerty.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/site.css">
-  <link rel="stylesheet" href="css/pushy.css">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -70,9 +67,9 @@
 
 <!--****** MAIN CONTENT ************** -->
 
-<div class="wrapper">
+<div class="wrap">
 
-  <div class="container">
+  <div class="pack">
     <div class="row">
       <div class="tx-center">
         <img src="images/logo.png" width="180px" />
@@ -82,120 +79,172 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="pack">
     <div class="row">
-    	<div class="cards">
-    		<div class="card twelve columns" href="#">
-  				<span class="card-title accent-orange">
-  					<h3>This is a title for a card.</h3>
-  				</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page. A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-  		  </div>
+      <div class="three cols card card-red"><!-- card -->
+        <div class="head">
+          <i class="icon ion-close-circled"></i>&nbsp;これはヘッダーです。
+        </div>
+        <div class="body">
+          これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
       </div>
-    	<div class="cards">
-    		<div class="card info three columns" href="#">
-  				<span class="card-title">
-  					<h3><i class="icon ion-information-circled"></i> Information</h3>
-  				</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-  		  </div>
-    		<div class="card succ three columns" href="#">
-  				<span class="card-title">
-  					<h3><i class="icon ion-checkmark-circled"></i> Success!</h3>
-  				</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-    		</div>
-    		<div class="card warn three columns" href="#">
-  				<span class="card-title">
-  					<h3><i class="icon ion-alert-circled"></i> Warning!</h3>
-  				</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-  		  </div>
-    		<div class="card dang three columns" href="#">
-  				<span class="card-title">
-  					<h3><i class="icon ion-close-circled"></i> Error.</h3>
-  				</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-    		</div>
+      <div class="three cols card card-yellow"><!-- card -->
+        <div class="head">
+          <i class="icon ion-alert-circled"></i>&nbsp;これはヘッダーです。
+        </div>
+        <div class="body">
+          こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
       </div>
-      <div class="cards">
-    		<div class="card four columns" href="#">
-    			<span class="card-header-img" style="background-image: url(http://placeimg.com/400/200/animals);">
-    				<span class="card-title">
-              <h3>This is a title for a card.This is a title for a card.This is a title for a card</h3>
-    				</span>
-    			</span>
-    			<span class="card-summary">
-    				A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-    		</div>
-    		<div class="card four columns" href="#">
-    			<span class="card-header-img" style="background-image: url(http://placeimg.com/400/400/people)">
-    				<span class="card-title">
-    					<h3>This is a title for a card</h3>
-    				</span>
-    			</span>
-    			<span class="card-summary">
-    				Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height will expand to match the longest item.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-    		</div>
-    		<div class="card four columns" href="#">
-    			<span class="card-header-img" style="background-image: url(http://placeimg.com/400/250/nature);">
-    				<span class="card-title">
-    					<h3>This is a title for a card</h3>
-    				</span>
-    			</span>
-    			<span class="card-summary">
-    				Using Flexbox is such a an easy, well supported way for grid-style content, such as cards. The cards height will expand to match the longest item.
-    			</span>
-    			<div class="card-meta">
-    				<span class="left">Published: June 18th, 2015</span>
-      			<span class="right">Read more</span>
-    			</div>
-    		</div>
-    	</div>
+      <div class="three cols card card-green"><!-- card -->
+        <div class="head">
+          <i class="icon ion-checkmark-circled"></i>&nbsp;これはヘッダーです。
+        </div>
+        <div class="body">
+          こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
+      </div>
+      <div class="three cols card card-blue"><!-- card -->
+        <div class="head">
+          <i class="icon ion-android-alert"></i>&nbsp;これはヘッダーです。
+        </div>
+        <div class="body">
+          こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="seven cols card"><!-- card -->
+        Hello1
+      </div>
+        <div class="one cols card"><!-- card -->
+          Hello3
+        </div>
+          <div class="one cols card"><!-- card -->
+            Hello3
+          </div>
+            <div class="one cols card"><!-- card -->
+              Hello3
+            </div>
+              <div class="one cols card"><!-- card -->
+                Hello3
+              </div>
+                <div class="one cols card"><!-- card -->
+                  Hello3
+                </div>
+    </div>
+    <div class="row">
+      <div class="six cols card"><!-- card -->
+        <div class="image-head" style="background-image: url(http://placeimg.com/400/200/animals);">
+          <div class="title">
+            This is title.
+          </div>
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
+      </div>
+      <div class="six cols card card-blue"><!-- card -->
+        <div class="head">
+          <i class="icon ion-android-alert"></i>&nbsp;これはヘッダーです。
+        </div>
+        <div class="body">
+          こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
+        </div>
+        <div class="foot">
+          <a href="#" class="tx-center one-half card-btn">
+            <i class="icon ion-compose"></i>&nbsp;Edit
+          </a>
+          <a href="#" class="tx-center one-half card-btn danger">
+            <i class="icon ion-trash-a"></i>&nbsp;Delete
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve cols card"><!-- card -->
+        <div class="head">
+          <div class="title">
+            Input & Forms
+          </div>
+          <a class="circle-button">
+            <i class="icon ion-code-working"></i>
+          </a>
+        </div>
+        <div class="body">
+          <form class="qwertize">
+            <div class="row">
+              <div class="six cols">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="qw-fullwidth" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+              </div>
+              <div class="six cols">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="qw-fullwidth" id="exampleRecipientInput">
+                  <option value="Option 1">Questions</option>
+                  <option value="Option 2">Admiration</option>
+                  <option value="Option 3">Can I get your number?</option>
+                </select>
+              </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="qw-fullwidth" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <div class="row">
+                <div>
+                  <h6>Choose one.</h6>
+                  <input type="radio" name="sample-radio" checked="checked" id="radio-1" /><label for="radio-1">Windows</label>
+                  <input type="radio" name="sample-radio" id="radio-2" /><label for="radio-2">Mac</label>
+                  <input type="radio" name="sample-radio" id="radio-3" /><label for="radio-3">Linux</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="sample-checkbox" checked="checked" id="checkbox" /><label for="checkbox">Do you agree to the <a href="#">Terms of Use?</a></label>
+                </div>
+            </div>
+            <input class="btn-dark" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="container">
+  <div class="pack">
     <div class="row">
       <h4>Aligner</h4>
       <div class="aligner" style="height: 200px;">
@@ -208,9 +257,9 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="pack">
     <div class="row">
-      <div class="one-half column">
+      <div class="one-half col">
         <h4>Spacer</h4>
         <p>Following space is spacer-xl</p>
         <div class="spacer-xl"></div>
@@ -226,28 +275,28 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="pack">
     <div class="row">
     <h4>Text Align</h4>
     </div>
     <div class="row">
-      <div class="three columns fill-dark">
+      <div class="three cols fill-dark">
         <p class="tx-center">This Text align to center.</p>
       </div>
-      <div class="three columns fill-dark">
+      <div class="three cols fill-dark">
         <p class="tx-right">This Text align to right.</p>
       </div>
-      <div class="three columns fill-dark">
+      <div class="three cols fill-dark">
         <p class="tx-left">This Text align to left.</p>
       </div>
-      <div class="three columns fill-dark">
+      <div class="three cols fill-dark">
         <p class="tx-justify">This is justify text.This is justify text.This is justify text.This is justify text.This is justify text.</p>
       </div>
     </div>
   </div>
 
-  <!-- .container is main centered wrapper -->
-  <div class="container">
+  <!-- .pack is main centered wrap -->
+  <div class="pack">
     <!-- Standard Headings -->
     <h1>Heading</h1>
     <h2>Heading</h2>
@@ -264,26 +313,26 @@
     <em>Italicized</em>
     <a>Colored</a>
     <u>Underlined</u>
-    <!-- columns should be the immediate child of a .row -->
+    <!-- cols should be the immediate child of a .row -->
     <div class="row">
-      <div class="one column">One</div>
-      <div class="eleven columns">Eleven</div>
+      <div class="one col">One</div>
+      <div class="eleven cols">Eleven</div>
     </div>
 
-    <!-- just use a number and class 'column' or 'columns' -->
+    <!-- just use a number and class 'col' or 'cols' -->
     <div class="row">
-      <div class="two columns">Two</div>
-      <div class="ten columns">Ten</div>
+      <div class="two cols">Two</div>
+      <div class="ten cols">Ten</div>
     </div>
 
-    <!-- there are a few shorthand columns widths as well -->
+    <!-- there are a few shorthand cols widths as well -->
     <div class="row">
-      <div class="one-third column">1/3</div>
-      <div class="two-thirds column">2/3</div>
+      <div class="one-third col">1/3</div>
+      <div class="two-thirds col">2/3</div>
     </div>
     <div class="row">
-      <div class="one-half column">1/2</div>
-      <div class="one-half column">1/2</div>
+      <div class="one-half col">1/2</div>
+      <div class="one-half col">1/2</div>
     </div>
     <!-- Standard buttons -->
     <button>Button element</button>
@@ -303,37 +352,7 @@
       <button class="btn btn-dark btn-xl">btn-xl</button>
     </div>
 
-    <form>
-      <div class="row">
-        <div class="six columns">
-          <label for="exampleEmailInput">Your email</label>
-          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-        </div>
-        <div class="six columns">
-          <label for="exampleRecipientInput">Reason for contacting</label>
-          <select class="u-full-width" id="exampleRecipientInput">
-            <option value="Option 1">Questions</option>
-            <option value="Option 2">Admiration</option>
-            <option value="Option 3">Can I get your number?</option>
-          </select>
-        </div>
-      </div>
-      <label for="exampleMessage">Message</label>
-      <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
-      <div class="q-formbox">
-          <div>
-            <h6>Choose one.</h6>
-            <input type="radio" name="sample-radio" checked="checked" id="radio-1" /><label for="radio-1">Windows</label>
-            <input type="radio" name="sample-radio" id="radio-2" /><label for="radio-2">Mac</label>
-            <input type="radio" name="sample-radio" id="radio-3" /><label for="radio-3">Linux</label>
-          </div>
-          <div>
-              <input type="checkbox" name="sample-checkbox" checked="checked" id="checkbox" /><label for="checkbox">Do you agree to the <a href="#">Terms of Use?</a></label>
-          </div>
-      </div>
-      <input class="btn-dark" type="submit" value="Submit">
-    </form>
-    <table class="u-full-width">
+    <table class="qw-fullwidth">
       <thead>
         <tr>
           <th>Name</th>
