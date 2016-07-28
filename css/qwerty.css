@@ -15,7 +15,7 @@
 - Base Styles
 - Typography
 - Links
-- Buttons
+-
 - Forms
 - Lists
 - Code
@@ -155,7 +155,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom:.4rem;
   font-weight: 500; }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
@@ -232,8 +232,9 @@ input[type="button"]:hover,
 button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
-input[type="button"]:focus {s
+input[type="button"]:focus {
   outline: 0;
+  border: none;
 }
 .btn:active,
 button:active,
@@ -283,6 +284,42 @@ letter-spacing: .24rem;
 padding: .68rem 2.4rem .32rem 2.4rem;
 border-radius: .32rem;
 }
+.circle-button {
+  width: 40px;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #333;
+  position: absolute;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.circle-button i {
+  padding-left: 12px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.circle-button:hover {
+  background-color: #555;
+  box-shadow: 0px 6px 4px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  --webkit-transform: translateY(-4px);
+}
+
+.head .circle-button {
+  right: 30px;
+  margin-top: 10px;
+}
+
 
 .btn.btn-dark,
 button.btn-dark,
@@ -503,11 +540,9 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
-  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  padding-left: 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 2px solid #ddd;
-  box-shadow: none;
   box-sizing: border-box;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -539,14 +574,12 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 2px solid #ddd;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  border: 2px solid #666;
   outline: 0; }
 label,
 legend {
   display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
+  margin-bottom: .5rem;}
 fieldset {
   padding: 0;
   border-width: 0; }
@@ -558,95 +591,96 @@ label > .label-body {
   margin-left: .5rem;
   font-weight: normal; }
 
-  .q-formbox {
-      padding: 6px;
-  }
-  .q-formbox input[type=radio],
-  .q-formbox input[type=checkbox] {
-      display: inline-block;
-      margin-right: 6px;
-  }
-  .q-formbox input[type=radio] + label,
-  .q-formbox input[type=checkbox] + label {
-      position: relative;
+form {
+    padding: .8rem;
+    margin-bottom: 0;
+}
+.qwertize input[type=radio],
+.qwertize input[type=checkbox] {
+    display: inline-block;
+    margin-right: 6px;
+}
+.qwertize input[type=radio] + label,
+.qwertize input[type=checkbox] + label {
+    position: relative;
 
-      display: inline-block;
-      margin-right: 12px;
+    display: inline-block;
+    margin-right: 12px;
 
-      font-size: 14px;
-      line-height: 30px;
+    font-size: 14px;
+    line-height: 30px;
 
-      cursor: pointer;
-  }
+    cursor: pointer;
+}
 
-  @media (min-width: 1px) {
-      .q-formbox input[type=radio],
-      .q-formbox input[type=checkbox] {
-          display: none;
-          margin: 0;
-      }
-      .q-formbox input[type=radio] + label,
-      .q-formbox input[type=checkbox] + label {
-          padding: 0 0 0 24px;
-      }
-      .q-formbox input[type=radio] + label::before,
-      .q-formbox input[type=checkbox] + label::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: 0;
+@media (min-width: 1px) {
+    .qwertize input[type=radio],
+    .qwertize input[type=checkbox] {
+        display: none;
+        margin: 0;
+    }
+    .qwertize input[type=radio] + label,
+    .qwertize input[type=checkbox] + label {
+        padding: 0 0 0 24px;
+    }
+    .qwertize input[type=radio] + label::before,
+    .qwertize input[type=checkbox] + label::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
 
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          display: block;
-          width: 18px;
-          height: 18px;
-          margin-top: -9px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        width: 18px;
+        height: 18px;
+        margin-top: -9px;
 
-          background: #FFF;
-      }
-      .q-formbox input[type=radio] + label::before {
-          border: 2px solid #ccc;
-          border-radius: 30px;
-      }
-      .q-formbox input[type=checkbox] + label::before {
-          border: 2px solid #ccc;
-      }
-      .q-formbox input[type=radio]:checked + label::after,
-      .q-formbox input[type=checkbox]:checked + label::after {
-          content: "";
-          position: absolute;
-          top: 50%;
+        background: #FFF;
+    }
+    .qwertize input[type=radio] + label::before {
+        border: 2px solid #ccc;
+        border-radius: 30px;
+    }
+    .qwertize input[type=checkbox] + label::before {
+        border: 2px solid #ccc;
+    }
+    .qwertize input[type=radio]:checked + label::after,
+    .qwertize input[type=checkbox]:checked + label::after {
+        content: "";
+        position: absolute;
+        top: 50%;
 
-          -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          display: block;
-      }
-      .q-formbox input[type=radio]:checked + label::after {
-          left: 5px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+    }
+    .qwertize input[type=radio]:checked + label::after {
+        left: 5px;
 
-          width: 8px;
-          height: 8px;
-          margin-top: -4px;
+        width: 8px;
+        height: 8px;
+        margin-top: -4px;
 
-          background: #EB7413;
-          border-radius: 8px;
-      }
-      .q-formbox input[type=checkbox]:checked + label::after {
-          left: 3px;
+        background: #EB7413;
+        border-radius: 8px;
+    }
+    .qwertize input[type=checkbox]:checked + label::after {
+        left: 3px;
 
-          width: 16px;
-          height: 8px;
-          margin-top: -8px;
+        width: 16px;
+        height: 8px;
+        margin-top: -8px;
 
-          border-left: 3px solid #EB7413;
-          border-bottom: 3px solid #EB7413;
+        border-left: 3px solid #EB7413;
+        border-bottom: 3px solid #EB7413;
 
-          -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-      }
-  }
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
 
 
 /* Lists
@@ -703,12 +737,12 @@ td:last-child {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
 .btn {
-  margin-bottom: 1rem; }
+  margin: .5rem 0; }
 input,
 textarea,
 select,
 fieldset {
-  margin-bottom: 1.5rem; }
+  margin: .5rem 0; }
 pre,
 blockquote,
 dl,
@@ -718,7 +752,7 @@ p,
 ul,
 ol,
 form {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 0; }
 
 div.spacer-xl {
   width: 100%;
@@ -748,15 +782,12 @@ div.spacer-xs {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+.qw-fullwidth {
   width: 100%;
   box-sizing: border-box; }
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-.u-pull-right {
+.qw-float-right {
   float: right; }
-.u-pull-left {
+.qw-float-left {
   float: left; }
 
 
@@ -1265,7 +1296,15 @@ nav ul{
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 2px 0, rgba(0, 0, 0, 0.15) 0 0 6px 0;
   overflow: hidden;
+  margin-bottom: 1.5%;
 }
+
+@media (max-width: 550px) {
+  .card {
+    margin-bottom: 3%;
+  }
+}
+
 .card-red {
   border-top: dashed 1px rgba(173,30,37,0.6);
 }
@@ -1292,6 +1331,9 @@ nav ul{
   background-color: #999;
   height: 200px;
   background-size: cover;
+}
+.card .head .title {
+  display: inline;
 }
 .card .image-head .title {
   position: absolute;
@@ -1324,8 +1366,11 @@ nav ul{
   color: rgba(173,30,37,0.8);
 }
 .card .card-btn:active {
-  top: 3px;
-  opacity: 0.8;
+  background-color: #eeeeee;
+}
+
+.card input {
+
 }
 
 /* Accennt */
