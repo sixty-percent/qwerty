@@ -80,10 +80,6 @@
   .eleven.cols                 { width: 91.58333333333337%; }
   .twelve.cols                 { width: 100%; margin-left: 0; }
 
-  .one-third               { width: 33.33333333333333%; }
-  .two-thirds              { width: 66.66666666666666% }
-  .one-half                { width: 50%; }
-
   .one-third.col,
   .one-third.cols               { width: 32.66666666666667%; }
   .two-thirds.col,
@@ -125,6 +121,10 @@
 
 }
 
+.one-fourth              { width: 25%; }
+.one-third               { width: 33.33333333333333%; }
+.two-thirds              { width: 66.66666666666666% }
+.one-half                { width: 50%; }
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
