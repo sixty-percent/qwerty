@@ -67,17 +67,17 @@
     margin-left: 0; }
 
   .one.col,
-  .one.cols                    { width: 7.41666666666667%; }
-  .two.cols                    { width: 15.83333333333334%; }
+  .one.cols                    { width: 7.4166666666666%; }
+  .two.cols                    { width: 15.833333333333%; }
   .three.cols                  { width: 24.25%;            }
-  .four.cols                   { width: 32.66666666666667%; }
-  .five.cols                   { width: 41.08333333333335%; }
+  .four.cols                   { width: 32.666666666666%; }
+  .five.cols                   { width: 41.083333333333%; }
   .six.cols                    { width: 49.5%;            }
-  .seven.cols                  { width: 57.91666666666669%; }
-  .eight.cols                  { width: 66.33333333333336%; }
-  .nine.cols                   { width: 74.75000000000003%;          }
-  .ten.cols                    { width: 83.1666666666667%; }
-  .eleven.cols                 { width: 91.58333333333337%; }
+  .seven.cols                  { width: 57.916666666666%; }
+  .eight.cols                  { width: 66.333333333333%; }
+  .nine.cols                   { width: 74.750000000000%;          }
+  .ten.cols                    { width: 83.166666666666%; }
+  .eleven.cols                 { width: 91.583333333333%; }
   .twelve.cols                 { width: 100%; margin-left: 0; }
 
   .one-third               { width: 33.33333333333333%; }
@@ -85,44 +85,38 @@
   .one-half                { width: 50%; }
 
   .one-third.col,
-  .one-third.cols               { width: 32.66666666666667%; }
+  .one-third.cols               { width: 32.6666666666666%; }
   .two-thirds.col,
-  .two-thirds.cols              { width: 66.33333333333334%; }
+  .two-thirds.cols              { width: 66.3333333333333%; }
   .one-half.col,
   .one-half.cols                { width: 49.5%; }
 
   /* Offsets */
   .push-one.col,
-  .push-one.cols          { margin-left: 8.66666666667%; }
+  .push-one.cols          { margin-left: 8.4166666666666%; }
   .push-two.col,
-  .push-two.cols          { margin-left: 17.3333333333%; }
+  .push-two.cols          { margin-left: 16.833333333333%; }
   .push-three.col,
-  .push-three.cols        { margin-left: 26%;            }
+  .push-three.cols        { margin-left: 25.25%;         }
   .push-four.col,
-  .push-four.cols         { margin-left: 34.6666666667%; }
+  .push-four.cols         { margin-left: 33.666666666666%; }
   .push-five.col,
-  .push-five.cols         { margin-left: 43.3333333333%; }
+  .push-five.cols         { margin-left: 42.083333333333%; }
   .push-six.col,
-  .push-six.cols          { margin-left: 52%;            }
+  .push-six.cols          { margin-left: 50.5%;            }
   .push-seven.col,
-  .push-seven.cols        { margin-left: 60.6666666667%; }
+  .push-seven.cols        { margin-left: 58.916666666666%; }
   .push-eight.col,
-  .push-eight.cols        { margin-left: 69.3333333333%; }
+  .push-eight.cols        { margin-left: 67.333333333333%; }
   .push-nine.col,
-  .push-nine.cols         { margin-left: 78.0%;          }
+  .push-nine.cols         { margin-left: 75.750000000000%;          }
   .push-ten.col,
-  .push-ten.cols          { margin-left: 86.6666666667%; }
+  .push-ten.cols          { margin-left: 84.166666666666%; }
   .push-eleven.col,
-  .push-eleven.cols       { margin-left: 95.3333333333%; }
-
-  .push-one-third.col,
-  .push-one-third.cols    { margin-left: 34.6666666667%; }
-  .push-two-thirds.col,
-  .push-two-thirds.cols   { margin-left: 69.3333333333%; }
+  .push-eleven.cols       { margin-left: 92.583333333333%; }
 
   .push-one-half.col,
-  .push-one-half.cols     { margin-left: 52%; }
-
+  .push-one-half.cols     { margin-left: 50.5%; }
 }
 
 
@@ -222,6 +216,9 @@ a:hover {
   border-bottom: solid 1px rgba(55, 55, 55, 0.2);
   border-right: solid 1px rgba(55, 55, 55, 0.2);
   color: #333;
+  font-size: 1.4rem;
+  letter-spacing: .28rem;
+  padding: 1rem 2rem .8rem 2rem;
 }
 
 .btn:hover, .btn:focus, .btn:active{
@@ -269,7 +266,7 @@ padding: 1rem 2rem .8rem 2rem;
 .circle-button i {
   padding-left: 12px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 42px;
   color: #fff;
   cursor: pointer;
 }
@@ -294,6 +291,7 @@ padding: 1rem 2rem .8rem 2rem;
   border-bottom: solid 1px rgba(55, 55, 55, 0.2);
   border-right: solid 1px rgba(55, 55, 55, 0.2);
   border-radius: 5px;
+  padding: 12px;
 }
 
 /* Forms
@@ -480,7 +478,7 @@ td:first-child {
   padding-left: 12px; }
 th:last-child,
 td:last-child {
-  padding-right: 12px; }
+  padding-right: 12px;  }
 tr:nth-child(2n) {
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -1089,47 +1087,39 @@ nav ul{
 }
 .card .foot {
   display: flex;
+  border-top: solid 1px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
-.card .card-btn {
+.card .foot .card-btn {
   background-color: #fff;
   color: #333;
-  border-top: solid 1px rgba(0, 0, 0, 0.1);
   border-left: solid 1px rgba(0, 0, 0, 0.1);
-  padding: .6rem;
-  padding-bottom: .5rem;
   box-sizing: border-box;
   font-size: 1.2rem;
   display: inline-block;
   position: relative;
   white-space: nowrap;
+  padding: .4rem;
+}
+.card .foot .left {
+  font-size: 1.2rem;
+  padding: .8rem;
+}
+.card .foot .right {
+  font-size: 1.2rem;
+  padding: .8rem;
+  position: absolute;
+  right: 0;
+}
+.card .foot i {
+  font-size: 1.5rem;
 }
 .card .card-btn:first-child {
   border-left: solid 0px rgba(0, 0, 0, 0.1);
 }
-.card .danger {
+.card .foot .danger {
   color: rgba(173,30,37,0.8);
 }
 .card .card-btn:active {
   background-color: #eeeeee;
-}
-
-.card input {
-
-}
-
-/* Accennt */
-.accent-dark {
-  border-top: 2px #333333 solid;
-}
-.accent-red {
-  border-top: 2px #ad1e25 solid;
-}
-.accent-blue {
-  border-top: 2px #007bc3 solid;
-}
-.accent-orange {
-  border-top: 2px #eb7413 solid;
-}
-.accent-green {
-  border-top: 2px #008051 solid;
 }
