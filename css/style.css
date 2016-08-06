@@ -1,18 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Viga';
 .logo {
-  font-family: 'Viga', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 1rem;
+  font-weight: 200;
+  font-size: 2.4rem;
+  letter-spacing: .2rem;
   padding-left: 8px;
-  color: #333;
+  color: rgba(0, 0, 0, 0.8);
   -webkit-box-reflect: below -26px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.4, transparent), to(rgba(0,0,0,0.8)));
 }
 
 .pmenu .brand-box {
-  box-shadow: 0px 5px 15px -5px rgba(111,111,111,0.5);
-  -webkit-box-shadow: 0px 5px 15px -5px rgba(111,111,111,0.5);
-  -moz-box-shadow: 0px 5px 15px -5px rgba(111,111,111,0.5);
-  margin-bottom: 24px;
+  padding: 36px 0;
+}
+.pmenu .brand-ul .active {
+  background-color: #333;
 }
 
 .pmenu .brand-box p {
@@ -23,3 +23,18 @@
   color: #e1e1e1;
   margin: 0;
 }
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
