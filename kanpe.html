@@ -84,12 +84,27 @@
       <div class="three cols card card-red"><!-- card -->
         <div class="head">
           <i class="icon ion-close-circled"></i>&nbsp;I'm head.
-          <a class="circle-button fill-red">
+          <a class="circle-button fill-red show-btn-1">
             <i class="icon ion-code"></i>
           </a>
         </div>
-        <div class="body">
-          The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+        <div class="body code-toggle">
+          <div class="visible-content-1">
+            The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          </div>
+          <textarea class="hidden-code-1" style="display: none" onclick="this.focus();this.select()">
+<div class="three cols card card-red">
+  <div class="head">
+    I'm head.
+  </div>
+  <div class="body">
+    The body is here.
+  </div>
+  <div class="foot">
+    <span class="left">left foot.</span>
+  </div>
+</div>
+          </textarea>
         </div>
         <div class="foot">
           <a href="#" class="tx-center one-half card-btn">
@@ -182,8 +197,10 @@
           The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
         </div>
         <div class="foot">
-          <span class="left">I'm Awesome left foot. </span>
-          <span class="right">I'm Awesome right foot. </span>
+          <div class="meta">
+            <span class="left">I'm Awesome left foot. </span>
+            <span class="right">I'm Awesome right foot. </span>
+          </div>
         </div>
       </div>
     </div>
@@ -399,6 +416,28 @@
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <!-- Pushy JS -->
 <script src="js/pushy.min.js"></script>
-
+<script type="text/javascript">
+$(function(){
+  $('.show-btn-1').click(function(){
+    if($('.hidden-code-1').is(':visible')) {
+      $('.hidden-code-1').hide();
+      $('.visible-content-1').show();
+      $('.code-toggle').css('padding','12px');
+      var childTextarea = $('.code-toggle').find('textarea');
+      childTextarea.css('height','auto');
+      childTextarea.css('font-size','inherit');
+      childTextarea.removeClass('showing');
+    }else {
+      $('.hidden-code-1').show();
+      $('.visible-content-1').hide();
+      $('.code-toggle').css('padding','0');
+      var childTextarea = $('.code-toggle').find('textarea');
+      childTextarea.css('height','320px');
+      childTextarea.css('font-size','16px');
+      childTextarea.addClass('showing');
+    }
+  });
+});
+</script>
 </body>
 </html>
