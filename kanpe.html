@@ -12,7 +12,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,400,500,600,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/qwerty.css">
@@ -26,42 +27,39 @@
 
   <!--****** HEADER ************** -->
 
-<header class="menu-header">
-  <div class="header-left">
-    <a class="menu-btn"><i class="icon ion-navicon"></i></a>
-  </div>
-  <nav class="pmenu pmenu-left">
-    <div class="brand-box">
-      <div class="spacer-sm"></div>
-      <div class="tx-center menu-brand">
-        <img class="" src="images/logo.png" width="100px" />
-        <p>QWERTY</p>
-      </div>
-      <div class="spacer-sm"></div>
+  <header class="menu-header">
+    <div class="header-left">
+      <a class="menu-btn"><i class="icon ion-navicon"></i></a>
     </div>
-    <ul>
-      <li class="pmenu-link"><a href="./index.html"><i class="icon ion-android-list"></i>&nbsp;&nbsp;Intro</a></li>
-      <li class="pmenu-link"><a href="./concept.html"><i class="icon ion-coffee"></i>&nbsp;&nbsp;Conception</a></li>
-      <li class="pmenu-link"><a href="./kanpe.html"><i class="icon ion-code"></i>&nbsp;&nbsp;CheetSheet</a></li>
-      <li class="pmenu-submenu">
-          <a href="#"><i class="icon ion-document-text"></i>&nbsp;&nbsp;Themses  <i class="pmenu-icon icon ion-ios-arrow-right"></i></a>
-          <ul>
-              <li class="pmenu-link"><a href="./themes/admin.html">
-                Dashboard</a></li>
-              <li class="pmenu-link"><a href="./themes/landing.html">Landing Pages</a></li>
-              <li class="pmenu-link"><a href="">Coming Soon...</a></li>
-          </ul>
-      </li>
-      <li class="pmenu-link"><a href="https://github.com/thousandjapan/qwerty" target="_blank"><i class="icon ion-social-github"></i>&nbsp;&nbsp;Guthub <i class="icon ion-android-open"></i></a></li>
-    </ul>
-  </nav>
-  <div class="header-center">
-    <a class=""><h4 class="logo">QWERTY</h4></a>
-  </div>
-  <div class="header-right">
-    <a class=""><i class="icon ion-ios-search-strong"></i></a>
-  </div>
-</header>
+    <nav class="pmenu pmenu-left">
+      <div class="brand-box">
+        <div class="spacer-sm"></div>
+        <div class="tx-center menu-brand">
+          <img class="" src="images/logo.png" width="100px" />
+          <p>QWERTY</p>
+        </div>
+        <div class="spacer-sm"></div>
+      </div>
+      <ul class="brand-ul">
+        <li class="pmenu-link"><a href="./index.html"><i class="icon ion-android-list"></i>&nbsp;&nbsp;Intro</a></li>
+        <li class="pmenu-link"><a href="./concept.html"><i class="icon ion-coffee"></i>&nbsp;&nbsp;Conception</a></li>
+        <li class="pmenu-link active"><a href="./kanpe.html"><i class="icon ion-code"></i>&nbsp;&nbsp;CheetSheet</a></li>
+        <li class="pmenu-submenu">
+            <a href="#"><i class="icon ion-document-text"></i>&nbsp;&nbsp;Themses  <i class="pmenu-icon icon ion-ios-arrow-right"></i></a>
+            <ul>
+                <li class="pmenu-link"><a href="">Coming Soon...</a></li>
+            </ul>
+        </li>
+        <li class="pmenu-link"><a href="https://github.com/thousandjapan/qwerty" target="_blank"><i class="icon ion-social-github"></i>&nbsp;&nbsp;Guthub <i class="icon ion-android-open"></i></a></li>
+      </ul>
+    </nav>
+    <div class="header-center">
+      <a href="index.html"><h4 class="logo">QWERTY</h4></a>
+    </div>
+    <div class="header-right">
+      <a class=""><i class="icon ion-ios-search-strong"></i></a>
+    </div>
+  </header>
 
 <div class="site-overlay"></div>
 
@@ -74,16 +72,20 @@
       <div class="tx-center">
         <img src="images/logo.png" width="180px" />
         <h5 class="fw-100"><span class="fw-500">Customizing</span><br class="show-xs"> is as</span><span class="fw-500"> easy</span> as pie.</h5>
-        <button class="btn-sm btn-dark menu-btn"><i class="icon ion-navicon"></i> Menu</button>
-        <a href="https://codeload.github.com/thousandjapan/qwerty/zip/master"><button class="btn-sm btn-red"><i class="icon ion-archive"></i> Download</button></a>
+        <button class="btn btn-sm menu-btn"><i class="icon ion-navicon"></i> Menu</button>
+        <a href="https://codeload.github.com/thousandjapan/qwerty/zip/master"><button class="btn btn-sm"><i class="icon ion-archive"></i> Download</button></a>
       </div>
     </div>
   </div>
+
   <div class="pack">
     <div class="row">
       <div class="three cols card card-red"><!-- card -->
         <div class="head">
           <i class="icon ion-close-circled"></i>&nbsp;これはヘッダーです。
+          <a class="circle-button fill-red">
+            <i class="icon ion-code"></i>
+          </a>
         </div>
         <div class="body">
           これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。こんにちは。これは本文です。
@@ -147,26 +149,6 @@
       </div>
     </div>
     <div class="row">
-      <div class="seven cols card"><!-- card -->
-        Hello1
-      </div>
-        <div class="one cols card"><!-- card -->
-          Hello3
-        </div>
-          <div class="one cols card"><!-- card -->
-            Hello3
-          </div>
-            <div class="one cols card"><!-- card -->
-              Hello3
-            </div>
-              <div class="one cols card"><!-- card -->
-                Hello3
-              </div>
-                <div class="one cols card"><!-- card -->
-                  Hello3
-                </div>
-    </div>
-    <div class="row">
       <div class="six cols card"><!-- card -->
         <div class="image-head" style="background-image: url(http://placeimg.com/400/200/animals);">
           <div class="title">
@@ -206,7 +188,7 @@
             Input & Forms
           </div>
           <a class="circle-button">
-            <i class="icon ion-code-working"></i>
+            <i class="icon ion-code"></i>
           </a>
         </div>
         <div class="body">
@@ -242,68 +224,90 @@
           </form>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="pack">
-    <div class="row">
-      <h4>Aligner</h4>
-      <div class="aligner" style="height: 200px;">
-        <p class="center">Hello</p>
-        <p class="right">Hello</p>
-        <p class="left">Hello</p>
-        <p class="right bottom">Hello</p>
-        <p class="left bottom">Hello</p>
+      <div class="row">
+        <div class="six cols card"><!-- card -->
+          <div class="head">
+            <div class="title">
+              Aligner
+            </div>
+            <a class="circle-button">
+              <i class="icon ion-code"></i>
+            </a>
+          </div>
+          <div class="body">
+            <div class="row">
+              <div class="aligner" style="height: 200px;">
+                <p class="center">Hello</p>
+                <p class="right">Hello</p>
+                <p class="left">Hello</p>
+                <p class="right bottom">Hello</p>
+                <p class="left bottom">Hello</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="six cols card"><!-- card -->
+          <div class="head">
+            <div class="title">
+              Spacer
+            </div>
+            <a class="circle-button">
+              <i class="icon ion-code"></i>
+            </a>
+          </div>
+          <div class="body">
+            <div class="row">
+              <p>Following space is spacer-1 (1em)</p>
+              <div class="spacer-1"></div>
+              <p>Following space is spacer-2 (2em)</p>
+              <div class="spacer-2"></div>
+              <p>Following space is spacer-3 (3em) </p>
+              <div class="spacer-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve cols card"><!-- card -->
+          <div class="head">
+            <div class="title">
+              Text Align
+            </div>
+            <a class="circle-button">
+              <i class="icon ion-code"></i>
+            </a>
+          </div>
+          <div class="body">
+            <div class="row">
+              <div class="three cols fill-dark">
+                <p class="tx-center">This Text align to center.</p>
+              </div>
+              <div class="three cols fill-dark">
+                <p class="tx-right">This Text align to right.</p>
+              </div>
+              <div class="three cols fill-dark">
+                <p class="tx-left">This Text align to left.</p>
+              </div>
+              <div class="three cols fill-dark">
+                <p class="tx-justify">This is justify text.This is justify text.This is justify text.This is justify text.This is justify text.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="pack">
-    <div class="row">
-      <div class="one-half col">
-        <h4>Spacer</h4>
-        <p>Following space is spacer-xl</p>
-        <div class="spacer-xl"></div>
-        <p>Following space is spacer-lg</p>
-        <div class="spacer-lg"></div>
-        <p>Following space is spacer-md</p>
-        <div class="spacer-md"></div>
-        <p>Following space is spacer-sm</p>
-        <div class="spacer-sm"></div>
-        <p>Following space is spacer-xs</p>
-        <div class="spacer-xs"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="pack">
-    <div class="row">
-    <h4>Text Align</h4>
-    </div>
-    <div class="row">
-      <div class="three cols fill-dark">
-        <p class="tx-center">This Text align to center.</p>
-      </div>
-      <div class="three cols fill-dark">
-        <p class="tx-right">This Text align to right.</p>
-      </div>
-      <div class="three cols fill-dark">
-        <p class="tx-left">This Text align to left.</p>
-      </div>
-      <div class="three cols fill-dark">
-        <p class="tx-justify">This is justify text.This is justify text.This is justify text.This is justify text.This is justify text.</p>
-      </div>
-    </div>
-  </div>
 
   <!-- .pack is main centered wrap -->
   <div class="pack">
     <!-- Standard Headings -->
-    <h1>Heading</h1>
-    <h2>Heading</h2>
-    <h3>Heading</h3>
-    <h4>Heading</h4>
-    <h5>Heading</h5>
-    <h6>Heading</h6>
+    <h1>Heading(h1)</h1>
+    <h2>Heading(h2)</h2>
+    <h3>Heading(h3)</h3>
+    <h4>Heading(h4)</h4>
+    <h5>Heading(h5)</h5>
+    <h6>Heading(h6)</h6>
 
     <!-- Base type size -->
     <p>The base type is 15px over 1.6 line height (24px)</p>
@@ -335,47 +339,58 @@
       <div class="one-half col">1/2</div>
     </div>
     <!-- Standard buttons -->
-    <button>Button element</button>
-    <!-- color buttons -->
+    <h5>Button element</h5>
     <div class="row">
-      <button class="btn btn-dark">Dark</button>
-      <button class="btn btn-red">Red</button>
-      <button class="btn btn-orange">Orange</button>
-      <button class="btn btn-blue">Blue</button>
-      <button class="btn btn-green">Green</button>
-    </div>
-    <div class="row">
-      <button class="btn btn-dark btn-xs">btn-xs</button>
       <button class="btn btn-dark btn-sm">btn-sm</button>
       <button class="btn btn-dark btn-md">btn-md</button>
       <button class="btn btn-dark btn-lg">btn-lg</button>
-      <button class="btn btn-dark btn-xl">btn-xl</button>
+    </div>
+    <div class="spacer-1"></div>
+    <div class="qw-box">
+      <table class="qw-fullwidth">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Chad Smith</td>
+            <td>54</td>
+            <td>Male</td>
+            <td>Saint Paul</td>
+          </tr>
+          <tr>
+            <td>Thomas lang</td>
+            <td>49</td>
+            <td>Male</td>
+            <td>Wien</td>
+          </tr>
+          <tr>
+            <td>Mike Portnoy</td>
+            <td>49</td>
+            <td>Male</td>
+            <td>Long Beach</td>
+          </tr>
+          <tr>
+            <td>John Henry Bonham</td>
+            <td>-</td>
+            <td>Male</td>
+            <td>Redditch</td>
+          </tr>
+          <tr>
+            <td>Tatsuya Amano</td>
+            <td>25?</td>
+            <td>Male</td>
+            <td>Osaka</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <table class="qw-fullwidth">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>Sex</th>
-          <th>Location</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Dave Gamache</td>
-          <td>26</td>
-          <td>Male</td>
-          <td>San Francisco</td>
-        </tr>
-        <tr>
-          <td>Dwayne Johnson</td>
-          <td>42</td>
-          <td>Male</td>
-          <td>Hayward</td>
-        </tr>
-      </tbody>
-    </table>
   </div>
 </div>
 
