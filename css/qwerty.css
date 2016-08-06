@@ -272,7 +272,7 @@ padding: 1rem 2rem .8rem 2rem;
 .circle-button i {
   padding-left: 12px;
   font-size: 20px;
-  line-height: 46px;
+  line-height: 42px;
   color: #fff;
   cursor: pointer;
 }
@@ -589,6 +589,21 @@ there.
 
 .fill-red {
   background-color: rgba(173,30,37,1);
+  color: #f5f5f5;
+}
+
+.fill-orange {
+  background-color: rgba(235,116,19,1);
+  color: #f5f5f5;
+}
+
+.fill-green {
+  background-color: rgba(0, 128, 81,1);
+  color: #f5f5f5;
+}
+
+.fill-blue {
+  background-color: rgba(0, 123, 195,1);
   color: #f5f5f5;
 }
 
@@ -1094,6 +1109,7 @@ nav ul{
   display: list-item;
   font-size: 1.2rem;
   padding: .6em;
+  color: #999;
 }
 .card .foot .right {
   position: absolute;
