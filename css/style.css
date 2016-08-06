@@ -1,13 +1,10 @@
-@import 'https://fonts.googleapis.com/css?family=Viga';
 .logo {
+  font-family: Lobster;
   font-weight: 200;
-  font-size: 2.4rem;
-  letter-spacing: .2rem;
+  font-size: 2.8rem;
   padding-left: 8px;
-  color: rgba(0, 0, 0, 0.8);
-  -webkit-box-reflect: below -26px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(0.4, transparent), to(rgba(0,0,0,0.8)));
+  color: #333;
 }
-
 .pmenu .brand-box {
   padding: 36px 0;
 }
@@ -16,9 +13,8 @@
 }
 
 .pmenu .brand-box p {
-  font-family: 'Viga', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.75rem;
+  font-family: Lobster;
+  font-size: 2.4rem;
   padding-left: 1.2px;
   color: #e1e1e1;
   margin: 0;
