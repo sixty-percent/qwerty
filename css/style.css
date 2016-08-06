@@ -26,18 +26,20 @@
 
 .card .body {
   background-color: #fff;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all  0.3s ease;
 }
 
- .showing {
+.showing {
   background-color: #333;
   color: #fff;
   width: 100%;
 }
 
-.hidden-code-1 {
+.hidden-code {
   word-wrap: normal;
+  border: 0;
+  margin-top: -2px;
+  margin-bottom: -10px;
+  padding: 12px;
+  height: 300px;
+  font-size: 16px;
 }
