@@ -289,7 +289,10 @@ padding: 1rem 2rem .8rem 2rem;
   right: 4px;
   margin-top: -4px;
 }
-
+.image-head .circle-button {
+  right: 4px;
+  margin-top: 4px;
+}
 .qw-box {
   background-color: #fff;
   border-top: solid 1px rgba(200, 200, 200, 0.4);
