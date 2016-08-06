@@ -84,15 +84,15 @@
       <div class="three cols card card-red"><!-- card -->
         <div class="head">
           <i class="icon ion-close-circled"></i>&nbsp;I'm head.
-          <a class="circle-button fill-red show-btn-1">
+          <a class="circle-button fill-red show-btn">
             <i class="icon ion-code"></i>
           </a>
         </div>
-        <div class="body code-toggle">
-          <div class="visible-content-1">
+        <div class="body">
+          <div class="visible-content">
             The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
           </div>
-          <textarea class="hidden-code-1" style="display: none" onclick="this.focus();this.select()">
+          <textarea class="hidden-code" style="display: none" onclick="this.focus();this.select()">
 <div class="three cols card card-red">
   <div class="head">
     I'm head.
@@ -118,9 +118,27 @@
       <div class="three cols card card-yellow"><!-- card -->
         <div class="head">
           <i class="icon ion-alert-circled"></i>&nbsp;I'm head.
+          <a class="circle-button fill-orange show-btn">
+            <i class="icon ion-code"></i>
+          </a>
         </div>
         <div class="body">
-          The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          <div class="visible-content">
+            The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          </div>
+          <textarea class="hidden-code" style="display: none" onclick="this.focus();this.select()">
+<div class="three cols card card-red">
+  <div class="head">
+    I'm head.
+  </div>
+  <div class="body">
+    The body is here.
+  </div>
+  <div class="foot">
+    <span class="left">left foot.</span>
+  </div>
+</div>
+          </textarea>
         </div>
         <div class="foot">
           <a href="#" class="tx-center one-third card-btn">
@@ -137,9 +155,27 @@
       <div class="three cols card card-green"><!-- card -->
         <div class="head">
           <i class="icon ion-checkmark-circled"></i>&nbsp;I'm head.
+          <a class="circle-button fill-green show-btn">
+            <i class="icon ion-code"></i>
+          </a>
         </div>
         <div class="body">
-          The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          <div class="visible-content">
+            The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          </div>
+          <textarea class="hidden-code" style="display: none" onclick="this.focus();this.select()">
+<div class="three cols card card-red">
+  <div class="head">
+    I'm head.
+  </div>
+  <div class="body">
+    The body is here.
+  </div>
+  <div class="foot">
+    <span class="left">left foot.</span>
+  </div>
+</div>
+          </textarea>
         </div>
         <div class="foot">
           <a href="#" class="tx-center one-fourth card-btn">
@@ -159,9 +195,27 @@
       <div class="three cols card card-blue"><!-- card -->
         <div class="head">
           <i class="icon ion-android-alert"></i>&nbsp;I'm head.
+          <a class="circle-button fill-blue show-btn">
+            <i class="icon ion-code"></i>
+          </a>
         </div>
         <div class="body">
-          The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          <div class="visible-content">
+            The body is here. I'm This card is completely clear, modern, and customizable. You can try this card as soon as you click the top right corner button <i class="icon ion-code"></i>.
+          </div>
+          <textarea class="hidden-code" style="display: none" onclick="this.focus();this.select()">
+<div class="three cols card card-red">
+  <div class="head">
+    I'm head.
+  </div>
+  <div class="body">
+    The body is here.
+  </div>
+  <div class="foot">
+    <span class="left">left foot.</span>
+  </div>
+</div>
+          </textarea>
         </div>
         <div class="foot">
           <a href="#" class="tx-center one-half card-btn">
@@ -418,23 +472,22 @@
 <script src="js/pushy.min.js"></script>
 <script type="text/javascript">
 $(function(){
-  $('.show-btn-1').click(function(){
-    if($('.hidden-code-1').is(':visible')) {
-      $('.hidden-code-1').hide();
-      $('.visible-content-1').show();
-      $('.code-toggle').css('padding','12px');
-      var childTextarea = $('.code-toggle').find('textarea');
-      childTextarea.css('height','auto');
-      childTextarea.css('font-size','inherit');
-      childTextarea.removeClass('showing');
+  $('.show-btn').click(function(){
+    var card = $(this).parents('.card');
+    var hidden = card.find('.hidden-code');
+    var visible = card.find('.visible-content');
+    var textArea = card.find('textarea');
+    var body = card.find('.body');
+    if(hidden.is(':visible')) {
+      hidden.hide();
+      visible.show();
+      textArea.removeClass('showing');
+      body.css('padding', '12px');
     }else {
-      $('.hidden-code-1').show();
-      $('.visible-content-1').hide();
-      $('.code-toggle').css('padding','0');
-      var childTextarea = $('.code-toggle').find('textarea');
-      childTextarea.css('height','320px');
-      childTextarea.css('font-size','16px');
-      childTextarea.addClass('showing');
+      hidden.show();
+      visible.hide();
+      textArea.addClass('showing');
+      body.css('padding', '0');
     }
   });
 });
