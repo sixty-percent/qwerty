@@ -424,35 +424,95 @@ form {
         content: "";
         position: absolute;
         top: 50%;
-
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         display: block;
     }
     .qwertize input[type=radio]:checked + label::after {
         left: 5px;
-
         width: 8px;
         height: 8px;
         margin-top: -4px;
-
         background: #EB7413;
         border-radius: 8px;
     }
     .qwertize input[type=checkbox]:checked + label::after {
         left: 3px;
-
         width: 16px;
         height: 8px;
         margin-top: -8px;
-
         border-left: 3px solid #EB7413;
         border-bottom: 3px solid #EB7413;
-
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
+
+    /* switch */
+    .qwertize .switch {
+        position: relative;
+        display: block;
+        margin: auto;
+        margin-bottom: .5em;
+        height: 26px;
+        overflow: hidden;
+        border: 2px solid #ccc;
+    }
+    .qwertize .switch input[type=radio] + label {
+        position: static;
+        float: left;
+        display: block;
+        width: 50%;
+        margin-right: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        font-size: 12px;
+    }
+    .qwertize .switch input[type=radio] + label::before {
+        content: attr(data-label);
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-top: 0;
+        text-align: center;
+        color: transparent;
+        background: transparent;
+        border: 0 none;
+        border-radius: 0;
+    }
+    .qwertize .switch input[type=radio] + label:last-child::before {left: 50%;right: 0;}
+    .qwertize .switch input[type=radio]:checked + label::before {color: #fff;}
+    .qwertize .switch input[type=radio] + label::after {border-radius: 0;}
+    .qwertize .switch input[type=radio]:first-child + label::after {content: none;}
+    .qwertize .switch input[type=radio] + label + input[type=radio] + label::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 0;
+        display: block;
+        width: auto;
+        height: auto;
+        margin: auto;
+        background: #EB7413;
+        border: 2px solid #fff;
+        -webkit-transition: all 200ms;
+        transition: all 200ms;
+    }
+
+    .qwertize .switch input[type=radio]:checked + label + input[type=radio] + label::after {
+        left: 0;
+        right: 50%;
+    }
+    .qwertize .switch input[type=radio] + label + input[type=radio]:checked + label::after {
+        left: 50%;
+        right: 0;
+    }
+
 }
 
 
