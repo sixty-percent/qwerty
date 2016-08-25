@@ -1217,9 +1217,17 @@ nav ul{
 .card input {
 
 }
-
 .card .card-menu {
+  padding: none;
+}
+.card .card-menu ul {
   list-style: none;
+  margin: none;
+}
+.card .card-menu li {
+  list-style: none;
+  margin: none;
+  padding: 4px 8px;
 }
 
 /* Accennt */
