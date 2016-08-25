@@ -1218,11 +1218,11 @@ nav ul{
 
 }
 .card .card-menu {
-  padding: none;
+  padding: 0;
 }
 .card .card-menu ul {
   list-style: none;
-  margin: none;
+  margin: 0;
 }
 .card .card-menu li {
   list-style: none;
