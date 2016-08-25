@@ -1220,6 +1220,9 @@ nav ul{
 .card .card-menu {
   padding: 0;
 }
+.card .card-menu div {
+  padding: 4px;
+}
 .card .card-menu ul {
   list-style: none;
   margin: 0;
