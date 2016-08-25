@@ -1217,6 +1217,9 @@ nav ul{
 .card input {
 
 }
+.card .card-menu {
+  padding: 0;
+}
 .card .card-menu ul {
   list-style: none;
   margin: 0;
