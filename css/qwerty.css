@@ -1235,6 +1235,12 @@ nav ul{
 .card .card-menu li:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
+.card .card-menu li {
+  border-bottom: dashed 1px #ddd;
+}
+.card .card-menu li:last-child {
+  border-bottom: dashed 0px #ddd;
+}
 
 /* Accennt */
 .accent-dark {
