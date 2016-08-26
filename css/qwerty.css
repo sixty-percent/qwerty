@@ -1232,16 +1232,16 @@ nav ul{
   list-style: none;
   margin: 0;
 }
-.card .card-menu li {
+.card .card-menu .list {
   list-style: none;
   margin: 0;
   padding: 5px 15px;
   cursor: pointer;
 }
-.card .card-menu li:hover {
+.card .card-menu .list:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.card .card-menu li {
+.card .card-menu .list {
   border-bottom: dashed 1px #ddd;
 }
 .card .card-menu li:last-child {
