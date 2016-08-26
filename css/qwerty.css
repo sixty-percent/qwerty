@@ -1231,6 +1231,7 @@ nav ul{
   list-style: none;
   margin: 0;
   padding: 5px 10px;
+  cursor: pointer;
 }
 .card .card-menu li:hover {
   background-color: rgba(0, 0, 0, 0.05);
