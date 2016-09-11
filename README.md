@@ -1,6 +1,9 @@
 # About qwerty
 Welcome to qwerty ヽ(´∀｀)
+- [Demo](https://thousandjapan.github.io/qwerty/kanpe.html)
 - [Download the zip](https://codeload.github.com/thousandjapan/qwerty/zip/master)
+- [CDN for Development](https://rawgit.com/thousandjapan/qwerty/master/css/qwerty.css)
+- [CDN for Production](https://cdn.rawgit.com/thousandjapan/qwerty/master/css/qwerty.css)
 
 qwerty is Simple, Clean, and Efficient Design Framework.
 It's naturally responsive.
