@@ -1,55 +1,53 @@
 # About qwerty
 Welcome to qwerty ヽ(´∀｀)
 - [Demo](https://thousandjapan.github.io/qwerty/kanpe.html)
-- [Download the zip](https://codeload.github.com/thousandjapan/qwerty/zip/master)
-- [CDN for Development](https://rawgit.com/thousandjapan/qwerty/master/css/qwerty.css)
-- [CDN for Production](https://cdn.rawgit.com/thousandjapan/qwerty/master/css/qwerty.css)
+- CDN ( [Development](https://rawgit.com/thousandjapan/qwerty/master/css/qwerty.css) / [Production](https://cdn.rawgit.com/thousandjapan/qwerty/master/css/qwerty.css) )
 
 qwerty is Simple, Clean, and Efficient Design Framework.
 It's naturally responsive.
-
-## Why it's awesome
-
-qwerty is completely simple css framework. It's under active development.
-- Around 1000 lines of unminified CSS.
-- You don't need any compiling or installing. This is as easy as typing "qwerty".
-
-# How to use
 
 ## Getting started
 
 There are a couple ways to use qwerty:
 - [Download the zip](https://codeload.github.com/thousandjapan/qwerty/zip/master)
 - Clone the repo: `git clone https://github.com/thousandjapan/qwerty.git`
+- CDN `https://rawgit.com/thousandjapan/qwerty/master/css/qwerty.css`
 
 ## What's in the download?
 
-The zip file includes qwerty's core CSS(Normalize.css is contained), and an index.html as a starting point.
+The zip file includes qwerty.css(Normalize.css is contained), and an index.html as a starting point.
 
 ```
 qwerty/
 ├── index.html
+│
 ├── css/
 │   ├── qwerty.css(normalize.css is contained.)
 │   └── style.css
-├── js/
-│   └── pushy.js
-└── images/
-    └── favicon.ico
+│
+├── images/
+│   └── logo.png
+│
+└── themes/
+    ├── qwerty-core.css(normalize.css is contained.)
+    └── qwerty-material.css
 
 ```
+qwerty.css = Core Components + Default Theme.
+if you would like to change the theme, use qwerty-core.css and some theme.
 
+# Core Components
 
-# Grid System
+## Grid System
 The folloing is relation of contents.
 
 ```
 <div class="wrap">
   <div class="pack">
     <div class="row">
-      <div class="six col"><h1>First Content</h1></div>
-      <div class="four col"><h1>Second Content</h1></div>
-      <div class="two col"><h1>Second Content</h1></div>
+      <div class="six cols"><h1>First Content</h1></div>
+      <div class="four cols"><h1>Second Content</h1></div>
+      <div class="two cols"><h1>Second Content</h1></div>
     </div>
   </div>
 </div>
@@ -57,8 +55,6 @@ The folloing is relation of contents.
 
 qwerty requires the element is added classname **.wrap** to wrap all site contents.
 **.pack** is container of contents.
-
-# Components
 
 ## Text Selector
 Related to text style, use **tx-xxxx**,

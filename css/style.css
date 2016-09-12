@@ -5,19 +5,22 @@
   padding-left: 8px;
   color: #333;
 }
-.pmenu .brand-box {
-  padding: 36px 0;
+
+.menu-brand {
+  padding: 32px 0;
 }
-.pmenu .brand-ul .active {
+.brand-ul {
+  list-style: none;
+}
+.brand-ul li {
+  line-height: 40px;
+  padding: 8px 16px; 
+}
+.brand-ul li:hover {
   background-color: #333;
 }
-
-.pmenu .brand-box p {
-  font-family: Lobster;
-  font-size: 2.4rem;
-  padding-left: 1.2px;
-  color: #e1e1e1;
-  margin: 0;
+.brand-ul a {
+  color: #fff;
 }
 
 .card .body {
@@ -55,8 +58,67 @@
   -o-transition: all 6s ease-in-out;
   transition: all  6s ease-in-out;
   cursor: pointer;
+  margin: 16px;
 }
 .top-logo img:active {
   opacity: 0.5;
   transform: rotate(3600deg);
+}
+
+.left-nav {
+  width: 200px; 
+  position: fixed; 
+  z-index: 1; 
+  height: 100vh; 
+  background-color: #222; 
+  color: #fff; 
+  margin-top: -60px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  left: 0;
+}
+
+.wrap {
+  padding-left: 200px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.menu-header {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  width: calc(100% - 200px) !important;
+  padding-left: 200px;
+}
+
+/* Larger than tablet */
+@media (max-width: 1024px) {
+
+  .left-nav {
+    left: -200px;
+  }
+  
+  .wrap {
+    padding-left: 0px;
+  }
+  .menu-header {
+    width: calc(100%) !important;
+    padding-left: 0px;
+  }
+
+}
+
+.hidden-li {
+  display: none;
+  list-style: none;
+}
+
+.hidden-li li {
+  padding-left: 36px !important;
 }

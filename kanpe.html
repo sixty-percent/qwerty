@@ -26,13 +26,21 @@
 </head>
 <body>
 
-<!--****** HEADER ************** -->
+  <!--****** HEADER ************** -->
 
-<header class="menu-header">
-  <div class="header-left">
-    <a class="menu-btn"><i class="icon ion-navicon"></i></a>
-  </div>
-  <nav class="pmenu pmenu-left">
+  <header class="menu-header">
+    <div class="header-left">
+      <a class="menu-btn"><i class="icon ion-navicon"></i></a>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><h4 class="logo">qwerty</h4></a>
+    </div>
+    <div class="header-right">
+      <a class=""><i class="icon ion-ios-search-strong"></i></a>
+    </div>
+  </header>
+  
+  <nav class="left-nav">
     <div class="brand-box">
       <div class="spacer-sm"></div>
       <div class="tx-center menu-brand">
@@ -42,32 +50,18 @@
       <div class="spacer-sm"></div>
     </div>
     <ul class="brand-ul">
-      <li class="pmenu-link"><a href="./index.html"><i class="icon ion-android-list"></i>&nbsp;&nbsp;Intro</a></li>
-      <li class="pmenu-link"><a href="./concept.html"><i class="icon ion-coffee"></i>&nbsp;&nbsp;Conception</a></li>
-      <li class="pmenu-link active"><a href="./kanpe.html"><i class="icon ion-code"></i>&nbsp;&nbsp;CheetSheet</a></li>
-      <li class="pmenu-submenu">
-          <a href="#"><i class="icon ion-document-text"></i>&nbsp;&nbsp;Themses  <i class="pmenu-icon icon ion-ios-arrow-right"></i></a>
-          <ul>
-              <li class="pmenu-link"><a href="">Coming Soon...</a></li>
-          </ul>
+      <a href="./index.html"><li class=""><i class="icon ion-android-list"></i>&nbsp;&nbsp;Intro</li></a>
+      <a href="./concept.html"><li class=""><i class="icon ion-coffee"></i>&nbsp;&nbsp;Conception</li></a>
+      <a href="./kanpe.html"><li class="active"><i class="icon ion-code"></i>&nbsp;&nbsp;CheetSheet</li></a>
+      <li class="folder-list">
+          <a href="#"><i class="icon ion-document-text"></i>&nbsp;&nbsp;Themses  <i class="icon arrow-icon ion-ios-arrow-right"></i></a>
       </li>
-      <li class="pmenu-link"><a href="https://github.com/thousandjapan/qwerty" target="_blank"><i class="icon ion-social-github"></i>&nbsp;&nbsp;Guthub <i class="icon ion-android-open"></i></a></li>
+      <ul class="hidden-li">
+          <a href=""><li class="">Coming Soon...</li></a>
+      </ul>
+      <li class=""><a href="https://github.com/thousandjapan/qwerty" target="_blank"><i class="icon ion-social-github"></i>&nbsp;&nbsp;Guthub <i class="icon ion-android-open"></i></a></li>
     </ul>
   </nav>
-  <div class="header-center">
-    <a href="index.html"><h4 class="logo">qwerty</h4></a>
-  </div>
-  <div class="header-right">
-    <div class="qwertize">
-      <div class="switch" style="width: 160px; margin-top: 4px; margin-left: -140px;">
-          <input type="radio" name="lang-switch" id="lang-switch_1" value="1" checked="checked" />
-          <label for="lang-switch_1" data-label="English">English</label>
-          <input type="radio" name="lang-switch" id="lang-switch_0" value="0" />
-          <label for="lang-switch_0" data-label="日本語">日本語</label>
-      </div>
-    </div>
-  </div>
-</header>
 
 <div class="site-overlay"></div>
 
@@ -78,10 +72,11 @@
   <div class="pack">
     <div class="row">
       <div class="tx-center top-logo">
-        <img src="images/logo.png" width="180px" />
-        <h5 class="fw-100"><span class="fw-500">Customizing</span><br class="show-xs"> is as</span><span class="fw-500"> easy</span> as pie.</h5>
-        <button class="btn btn-sm menu-btn"><i class="icon ion-navicon"></i> Menu</button>
-        <a href="https://codeload.github.com/thousandjapan/qwerty/zip/master"><button class="btn btn-sm"><i class="icon ion-archive"></i> Download</button></a>
+        <img src="images/logo.png" />
+        <div class="row">
+            <a href="https://codeload.github.com/thousandjapan/qwerty/zip/master"><button style="margin-top: 8px" class="btn btn-sm fill-red"><i class="icon ion-archive"></i> Download</button></a>
+            <a href="https://github.com/thousandjapan/qwerty" target="_blank"><button style="margin-top: 8px" class="btn btn-sm"><i class="icon ion-social-github"></i> Github</button></a>
+        </div>
       </div>
     </div>
   </div>
@@ -657,23 +652,32 @@
 <!-- Pushy JS -->
 <script src="js/pushy.min.js"></script>
 <script type="text/javascript">
-$(function(){
-  $('.show-btn').click(function(){
-    var card = $(this).parents('.card');
-    var hidden = card.find('.hidden-code');
-    var visible = card.find('.visible-content');
-    var textArea = card.find('textarea');
-    var body = card.find('.body');
-    if(hidden.is(':visible')) {
-      hidden.hide();
-      visible.show();
-      textArea.removeClass('showing');
-      body.css('padding', '12px');
-    }else {
-      hidden.show();
-      visible.hide();
-      textArea.addClass('showing');
-      body.css('padding', '0');
+$(function() {
+  $('.clean-search-show').click(function(e) {
+    $('.clean-search').addClass('clean-search-active');
+  });
+  $('.wrap').click(function(e) {
+    $('.clean-search').removeClass('clean-search-active');
+  });
+  $('.pmenu-submenu').click(function(e) {
+    if(jQuery(this).hasClass('pmenu-submenu-closed')){
+      $('.pmenu-icon',this).removeClass('ion-ios-arrow-down');
+      $('.pmenu-icon',this).addClass('ion-ios-arrow-right');
+    } else if (jQuery(this).hasClass('pmenu-submenu-open') ) {
+      $('.pmenu-icon',this).addClass('ion-ios-arrow-down');
+      $('.pmenu-icon',this).removeClass('ion-ios-arrow-right');
+    }
+  });
+  
+  $('.folder-list').click(function() {
+    var element = $(this);
+    var next = $(this).next();
+    if (next.hasClass('folder-list')) {
+    } else {
+      var arrow = element.find('.arrow-icon');
+      arrow.toggleClass('ion-ios-arrow-right')
+      arrow.toggleClass('ion-ios-arrow-down')
+      next.slideToggle('fast');
     }
   });
 });
